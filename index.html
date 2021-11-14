@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">
+        <h1>Example Survey Form</h1>
+        <p>Thank you for taking the time to help us learn more about your running experience.</p>
+    </div>
+
+    <form id="main">
+        <label for="firstName">First name</label><br>
+        <input required type="text" id="firstName" name="firstName" placeholder="Enter your first name here..."><br>
+        <label for="lastName">Last Name</label><br>
+        <input required type="text" id="lastName" name="lastName" placeholder="Enter your last name here..."><br>
+        <label for="email">Email</label><br>
+        <input required type="text" id="email" placeholder="Enter your email here..."><br>
+        <label for="age">Age</label><br>
+        <input type="number" id="age"><br>
+        <label for="preference">What is your preferred event/distance?</label><br>
+        <select name="preference" id="pref">
+            <option value="200m">200 metres</option>
+            <option value="400m">400 metres</option>
+            <option value="800m">800 metres</option>
+            <option value="1500m">1,500 metres</option>
+            <option value="1600m">1,600 metres</option>
+            <option value="5k">5K (5,000 metres)</option>
+            <option value="10k">10K (10,000 metres)</option>
+            <option value="HM">Half Marathon (21K)</option>
+            <option value="M">Marathon (42K)</option>
+            <option value="UM">Ultra Marathon (above 42K)</option>
+        </select><br>
+        <label for="What do you run for?">Do you run for: </label><br>
+        <input type="checkbox"><label id="fun">Fun</label><br>
+        <input type="checkbox"><label id="recreation">Recreation</label><br>
+        <input type="checkbox"><label id="competition">Competition</label><br>
+        
+        <label for="form">Do you focus on running form as you run?</label><br>
+        <input type="radio" id="yes" name="form" value="Yes">
+        <label for="Yes">Yes</label><br>
+        <input type="radio" id="no" name="form" value="No">
+        <label for="No">No</label><br>
+        <label for="What type of training runs you do?">What type of training runs you do in a week?</label><br>
+        <input type="checkbox"><label id="tempo">Tempo Runs</label><br>
+        <input type="checkbox"><label id="interval">Interval Training</label><br>
+        <input type="checkbox"><label id="hills">Hills</label><br>
+        <input type="checkbox"><label id="long runs">Long Runs</label><br>
+        <input type="checkbox"><label id="other">Other</label><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
